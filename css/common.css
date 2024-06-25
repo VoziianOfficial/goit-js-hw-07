@@ -17,65 +17,119 @@ a {
   text-decoration: none;
 }
 
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* task-1 */
-
 .list-wrap {
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 24px;
-  position: relative;
   background-color: #fff;
-}
-
- .item {
-  border-radius: 8px;
-  padding: 16px;
-  gap: 16px;
-  background: #f6f6fe;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-}
-
-  .title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-  line-height: 1.33;
-  white-space: nowrap;
-  margin-top: -1px;
-  width: fit-content;
-}
-
-.list-menu {
-  gap: 8px;
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 24px;
+  gap: 24px;
+  
 }
 
-.menu-item {
-  display: flex;
+.list-wrap .item {
+  display: inline-flex;
+  flex-direction: column;
+  background: #f6f6fe;
+  padding: 16px;
+}
+
+.list-wrap .title {
+ font-weight: 600;
+font-size: 24px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+color: #2e2f42;
+margin-bottom: 16px;
+}
+
+.list-menu .menu-item {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  gap: 8px;
-  align-items: center;
-  padding-left: 15px;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #2e2f42;
-  font-family: "Montserrat";
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
 }
 
-/* task-2 /*
+.menu-item:not(:last-child) {
+margin-bottom: 8px;
+}
+
+
+
+/* task-2 */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+
+.gallery-itm {
+  width: calc(33% - 50px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box; 
+}
+
+/* task-3 */
+
+.input-form {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 360px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-left: 16px;
+  margin-top: 24px;
+  
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #2e2f42;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  margin-top: 16px;
+}
